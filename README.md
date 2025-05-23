@@ -106,7 +106,11 @@ npm run start:client
 
 Simulates a client connecting to the emulator or MITM. Good for unit testing specific messages.
 
-### Add Custom Commands
+## 🧩 Extend
+
+You can easily add your own commands and interceptors.
+
+### ➕ Add Custom Commands
 
 To handle custom client messages, add a file to `src/commands/` (for the emulator) or `src/mitm/commands/` (for the MITM proxy).  
 Each file should export a handler function with the signature `(ws, msg) => { ... }`.
@@ -155,7 +159,7 @@ const handler = (ws, msg) => {
 module.exports = handler;
 ```
 
-### Add Interceptors
+### 🪝 Add Interceptors
 
 Interceptors allow you to inspect or modify messages as they pass through the MITM proxy.  
 Place your interceptor files in `src/mitm/interceptors/`. Each interceptor registers a filter and a handler.
