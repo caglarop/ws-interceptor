@@ -1,0 +1,24 @@
+{
+  "name": "ws-interceptor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start:server": "node ./src/server.js",
+    "start:client": "node ./src/client/client.js",
+    "start:mitm": "node ./src/mitm/mitm.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "fs": "^0.0.1-security",
+    "https-proxy-agent": "^7.0.6",
+    "rate-limiter-flexible": "^7.1.1",
+    "ws": "^8.18.2"
+  }
+}

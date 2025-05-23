@@ -1,0 +1,14 @@
+# Dependency directories
+/node_modules
+
+# Environment files
+/.env
+
+# Package manager files
+package-lock.json
+yarn-lock
+yarn-error.log
+
+# IDE and OS files
+/.DS_Store
+/.idea
